@@ -1,0 +1,21 @@
+package Exercise;
+
+import java.util.ArrayList;
+
+public class Bai9 {
+	void bai9()
+	{
+		String s = "    Le        Nhat               Huy";
+		int n = s.length();
+		System.out.printf("a. Độ dài chuỗi '%s' là %d\n",s, n);
+		String a[] = s.split(" ");
+		s = "";
+		for (String s1 : a)
+			if (!s1.equals("")) {
+				s += s1 + " ";
+				System.err.println(s1 + s1.equals(" "));
+			}
+		s = s.trim();
+		System.out.println("b.Xóa các khoảng trắng thừa: " + s + ", độ dài chuỗi" + s.length());
+	}
+}

@@ -1,0 +1,20 @@
+package Exercise;
+
+import java.util.Scanner;
+
+class Bai3 {
+	protected void bai3() {
+		final float PI = 3.1416f;
+		Scanner sc = new Scanner(System.in);
+		int r;
+		do {
+			System.out.print("Chiều bán kính hình tròn: ");
+			r = sc.nextInt();
+			if (r == 0)
+				System.out.println("Bán kính phải khác 0 ");
+		} while (a < b || a == 0 || b == 0);
+		
+		System.out.printf("Chu vi hình chữ nhật = %d\n", 2*(a+b));
+		System.out.printf("Diện tích hình chữ nhật = %d\n", a*b);
+	}
+}

@@ -1,0 +1,26 @@
+package Exercise;
+
+import java.util.Scanner;
+
+public class Bai7 {
+	
+	int tong(int n) {
+		return n*(n+1)/2;
+	}
+	
+	void bai7()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Nhập một số nguyên: ");
+		int n = sc.nextInt();
+		System.out.println("a. Hiển thị số các số nguyên <= n và tổng của chúng");
+		for (int i = 1; i < n; ++i)
+			System.out.printf("%d + ", i);
+		System.out.println(n+" = "+tong(n));
+		
+		System.out.println("b. Hiển thị số các số tự nhiên chẵn <= n và tổng của chúng");
+		for (int i = 1; i < n; ++i)
+			System.out.printf("%d + ", i);
+		System.out.println(n+" = "+tong(n));
+	}
+}

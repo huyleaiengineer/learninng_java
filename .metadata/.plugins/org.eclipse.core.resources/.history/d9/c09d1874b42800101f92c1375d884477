@@ -1,0 +1,33 @@
+package Exercise;
+
+import java.util.Scanner;
+
+public class Bai8 {
+	private int a[], n;
+	void bai8()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.println("a. Nhập các phần tử của mảng a và tổng của chúng");
+		//n = sc.nextInt();
+		n = 10;
+		//a = new int[n];
+		//for (int i = 0; i < n; ++i)
+			//a[i] = sc.nextInt();
+		int b[] = {1, 8, 9, 4, 7, 7, 8, 10, 54, -11};
+		a = b;
+		
+		System.out.println("");
+		
+		System.out.println("");
+		
+		System.out.println("");
+		
+		System.out.println("");
+		
+		System.out.println("");
+		
+		System.out.println("");
+		
+		System.out.println("");
+	}
+}

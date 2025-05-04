@@ -1,0 +1,25 @@
+package Exercise;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bai1 b1 = new Bai1();
+		//b1.bai1();
+		Bai2 b2 = new Bai2();
+		//b2.bai2();
+		Bai3 b3 = new Bai3();
+		//b3.bai3();
+		Bai4 b4 = new Bai4();
+		//b4.bai4();
+		Bai5 b5 = new Bai5();
+		//b5.bai5();
+		Bai6 b6 = new Bai6();
+		//b6.bai6();
+		Bai7 b7 = new Bai7();
+		//b7.bai7();
+		Bai8 b8 = new Bai8();
+		b8.bai8();
+	}
+
+}

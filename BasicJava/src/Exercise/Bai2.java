@@ -1,0 +1,24 @@
+package Exercise;
+
+import java.util.Scanner;
+
+class Bai2 {
+	protected void bai2()
+	{
+		Scanner sc = new Scanner(System.in);
+		int a, b;
+		do {
+			System.out.print("Chiều dài: ");
+			a = sc.nextInt();
+			System.out.print("Chiều rộng: ");
+			b = sc.nextInt();
+			if (a < b)
+				System.out.println("Chiều dài phải lớn hơn chiều rộng!");
+			else if (a == 0 || b == 0)
+				System.out.println("Chiều dài và chiều rộng phải khác 0 ");
+		} while (a < b || a == 0 || b == 0);
+		
+		System.out.printf("Chu vi hình chữ nhật = %d\n", 2*(a+b));
+		System.out.printf("Diện tích hình chữ nhật = %d\n", a*b);
+	}
+}

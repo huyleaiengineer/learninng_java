@@ -1,0 +1,16 @@
+package Exercise;
+
+public class Bai9 {
+	void bai9()
+	{
+		String s = "    Le        Nhat               Huy";
+		System.out.printf("a. Độ dài chuỗi '%s' là %d\n",s, s.length());
+		//s = s.trim();
+		String[] a = s.split(" ");
+		s = "";
+		for (String s1 : a)
+			s += s1 + " ";
+		s = s.trim();
+		System.out.printf("a. Độ dài chuỗi '%s' là %d\n",s, s.length());
+	}
+}

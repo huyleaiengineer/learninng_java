@@ -1,0 +1,23 @@
+package Exercise;
+
+public class Bai8 {
+	private int a[], n;
+	void bai8()
+	{
+		System.out.println("Các phần tử của mảng a và tổng của chúng ");
+		
+		System.out.println("");
+		
+		System.out.println("");
+		
+		System.out.println("");
+		
+		System.out.println("");
+		
+		System.out.println("");
+		
+		System.out.println("");
+		
+		System.out.println("");
+	}
+}

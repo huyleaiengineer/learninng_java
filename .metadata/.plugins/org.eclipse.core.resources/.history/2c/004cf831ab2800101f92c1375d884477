@@ -1,0 +1,20 @@
+package Exercise;
+
+import java.util.Scanner;
+
+class Bai2 {
+	protected void bai2()
+	{
+		Scanner sc = new Scanner(System.in);
+		int a, b;
+		do {
+			System.out.print("Chiều dài: ");
+			a = sc.nextInt();
+			System.out.print("Chiều rộng: ");
+			b = sc.nextInt();
+		} while (a < b || a == 0 || b == 0);
+		
+		System.out.printf();
+		System.out.printf();
+	}
+}

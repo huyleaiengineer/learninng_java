@@ -1,0 +1,36 @@
+package Exercise;
+
+import java.util.ArrayList;
+
+public class Bai9 {
+	void bai9()
+	{
+		String s = "    Le        Nhat               Huy";
+		int n = s.length();
+		System.out.printf("a. Độ dài chuỗi '%s' là %d\n",s, n);
+		String a[] = s.split(" ");
+		s = "";
+		int dem = 0;
+		for (String s1 : a)
+			if (!s1.equals("")) {
+				s += s1 + " ";
+				++dem;
+			}
+		s = s.trim();
+		System.out.println("b .Xóa các khoảng trắng thừa: '" + s + "', độ dài chuỗi = " + s.length());
+		System.out.println("c. Đếm số từ của s và xuất mỗi từ nằm trên 1 dòng ");
+		System.out.printf("Số từ của '%s' là %d\n", s, ++dem);
+		System.out.println("Xuất mỗi từ nằm trên 1 dòng");
+		for (String s1 : a)
+			if (!s1.equals("")) {
+				System.out.println(s1);
+			}
+		System.out.println("d. Nhập số tự nhiên k, xuất k ký tự bên trái của s, k kí tự bên phải của s");
+		
+		System.out.print("Nhập vị trí k = ");
+		int k = sc.nextInt();
+		
+		System.out.printf("% ký tự bên trái của '%s' là %s ", k, s, s.substring(0, k+1));
+		
+	}
+}

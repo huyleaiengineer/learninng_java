@@ -1,0 +1,13 @@
+package Exercise;
+
+public class Main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Bai1 b1 = new Bai1();
+		b1.bai1();
+		Bai2 b2 = new Bai2();
+		b2.bai2();
+	}
+
+}

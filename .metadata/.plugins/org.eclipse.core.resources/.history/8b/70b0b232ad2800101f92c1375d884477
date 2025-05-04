@@ -1,0 +1,13 @@
+package Exercise;
+
+import java.util.Scanner;
+
+public class Bai4 {
+	protected void bai4() {
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Nhập một số nguyên: ");
+		int n = sc.nextInt();
+		String res = n > 0 ? "Số dương" : (n == 0 ? "Số 0" : "Số âm");
+		System.out.printf("%d là %s", n, res);
+	}
+}

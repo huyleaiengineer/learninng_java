@@ -1,0 +1,18 @@
+package Exercise;
+import java.util.*;
+
+public class Bai1 {
+	protected void bai1()
+	{
+		Scanner sc = new Scanner(System.in);
+		System.out.print("Nhập số nguyên thứ nhất: ");
+		int a = sc.nextInt();
+		System.out.print("Nhập số nguyên thứ hai: ");
+		int b = sc.nextInt();
+		
+		System.out.printf("%d + %d = %d", a, b, a+b);
+		System.out.printf("%d - %d = %d", a, b, a-b);
+		System.out.printf("%d * %d = %d", a, b, a*b);
+		System.out.printf("%d / %d = %d", a, b, a*1.0/b);
+	}
+}

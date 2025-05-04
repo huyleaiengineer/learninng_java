@@ -1,0 +1,12 @@
+package Exercise;
+
+public class Bai9 {
+	void bai9()
+	{
+		String s = "    Le        Nhat               Huy";
+		System.out.printf("a. Độ dài chuỗi '%s' là %d\n",s, s.length());
+		s = s.trim();
+		
+		System.out.println("b.Xóa các khoảng trắng thừa: " + s + ", độ dài chuỗi" + s.length());
+	}
+}
