@@ -1,0 +1,54 @@
+package BasicOperation;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class BasicOperation {
+
+	
+	static void importExportToConsole()
+	{
+		BufferedReader inStream = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("Nhập một chuỗi: ");
+		try {
+			String s = inStream.readLine();
+		
+			System.out.print("Nhập một số nguyên: ");
+			String intStringNumber = inStream.readLine();
+			int intNumber = Integer.parseInt(intStringNumber);
+			
+			System.out.print("Nhập một số thực: ");
+			String floatStringNumber = inStream.readLine();
+			float floatNumber = Float.parseFloat(floatStringNumber);
+			
+			System.out.printf("Tổng số nguyên và số thực là %d + %f = %f\n", intNumber, floatNumber, intNumber+floatNumber);
+		}catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	}
+	
+	static void usingScaner()
+	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("Nhập số thứ nhất");
+		int first = scanner.nextInt();
+		System.out.println("Nhập số thứ hai");
+		int second = scanner.nextInt();
+		System.out.printf("Tổng: %d + %d = %d\n", first, second, first+second);
+		System.out.printf("Hiệu: %d + %d = %d\n", first, second, first-second);
+		System.out.printf("Tích: %d + %d = %d\n", first, second, first*second);
+		System.out.printf("Thương: %d + %d = %d\n", first, second, first/second);
+	}
+	
+	public static void main(String[] args)  {
+		// TODO Auto-generated method stub
+		System.out.println("Lê Nhật Huy");
+		usingScaner();
+		importExportToConsole();
+		
+		
+	}
+
+}

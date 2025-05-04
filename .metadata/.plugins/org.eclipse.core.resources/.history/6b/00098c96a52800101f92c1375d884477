@@ -1,0 +1,32 @@
+package BasicOperation;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+public class BasicOperation {
+
+	void importExportToConsole()
+	{
+		BufferedReader inStream = new BufferedReader(InputStreamReader(System.in));
+		System.out.print("Nhập một chuỗi: ");
+		String s = inStream.readLine();
+		
+		System.out.print("Nhập một số nguyên: ");
+		String intStringNumber = inStream.readLine();
+		int intNumber = Integer.parseInt(intStringNumber);
+		
+		System.out.print("Nhập một số thực: ");
+		String floatStringNumber = inStream.readLine();
+		float floatNumber = Float.parseFloat(floatStringNumber);
+		
+		System.out.printf("Tổng số nguyên và số thực là %d + %f = %f", intNumber, floatNumber, intNumber+floatNumber);
+		
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println("Lê Nhật Huy");
+		importExportToConsole();
+
+	}
+
+}

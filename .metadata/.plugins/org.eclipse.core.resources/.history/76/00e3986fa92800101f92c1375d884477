@@ -1,0 +1,98 @@
+package BasicOperation;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class BasicOperation {
+
+	
+	static void importExportToConsole()
+	{
+		BufferedReader inStream = new BufferedReader(new InputStreamReader(System.in));
+		System.out.print("Nhập một chuỗi: ");
+		try {
+			String s = inStream.readLine();
+		
+			System.out.print("Nhập một số nguyên: ");
+			String intStringNumber = inStream.readLine();
+			int intNumber = Integer.parseInt(intStringNumber);
+			
+			System.out.print("Nhập một số thực: ");
+			String floatStringNumber = inStream.readLine();
+			float floatNumber = Float.parseFloat(floatStringNumber);
+			
+			System.out.printf("Tổng số nguyên và số thực là %d + %f = %f\n", intNumber, floatNumber, intNumber+floatNumber);
+		}catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}	
+	}
+	
+	static void usingScaner()
+	{
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("Nhập số thứ nhất");
+		int first = scanner.nextInt();
+		System.out.print("Nhập số thứ hai");
+		int second = scanner.nextInt();
+		System.out.printf("Tổng: %d + %d = %d\n", first, second, first+second);
+		System.out.printf("Hiệu: %d -%d = %d\n", first, second, first-second);
+		System.out.printf("Tích: %d * %d = %d\n", first, second, first*second);
+		System.out.printf("Thương: %d / %d = %f\n", first, second, (float)first/second);
+	}
+	
+	void arr1D()
+	{
+		int arrInt1[] = new int[100];
+		int []arrInt2 = new int[100];
+	}
+	
+	void arr2D()
+	{
+		int [][]a = new int[100][100];
+		int [][]b = new int[100][100];
+	}
+	
+	static void stringOperation()
+	{
+		String str;
+		String str1 = "Good";
+		String str2 = new String("Hello");
+		Integer myInteger = 5;
+		String integerString = myInteger.toString();
+		String integerString1 = String.valueOf(myInteger);
+		
+		System.out.println(str1.length()); // 4
+		System.out.println(str1.substring(0,2)); // "Go"
+		String str3 = "Morning"; 
+		String str4 = str1+str3; //"GoodMorning"
+		System.out.println(str4);
+		System.out.println(str4.indexOf("Morning")); // 4
+		System.out.println(str4.charAt(8)); // i
+		System.out.println(str4.contains("ing")); // true
+		System.out.println(str4.contains("Huy")); // false
+		System.out.println("    Le Nhat Huy           ".trim()); // Xóa kí tự đầu cuối
+		System.out.println(str4.toUpperCase());
+		System.out.println(str4.toLowerCase());
+		
+		
+		System.out.println(str1.replace('o', 'a'););
+		
+		String []arr = "Le Nhat Huy".split(" ");
+		for (String i : arr)
+			System.out.println(i);
+		
+	}
+	
+	public static void main(String[] args)  {
+		// TODO Auto-generated method stub
+		System.out.println("Lê Nhật Huy");
+		stringOperation();
+		usingScaner();
+		importExportToConsole();
+		
+		
+	}
+
+}
